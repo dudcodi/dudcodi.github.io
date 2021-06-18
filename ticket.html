@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html oncontextmenu='return false' ondragstart='return false'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>영차 Planet</title>
+	<link rel="stylesheet" type="text/css" href="ticket.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button#btn").click(function(){
+                var name = $('input#name').val();
+                var sex = $('select#sex').val();
+                var from = $('input#from').val();
+                var to = $('input#to').val();
+                var date = $('input#date').val();
+                var time = $('input#time').val();
+
+                $('output#name).val() = name;
+                $('output#name).val() = name;
+                $('output#name).val() = name;
+                $('output#name).val() = name;
+                $('output#name).val() = name;
+                $('output#name).val() = name;
+            });
+        });
+    </script>
+</head>
+
+<div class="container">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="BlueLogo.png" />
+			</a>
+		</div>
+		<div class="planet">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="ticket.html">🎫</a></li>
+				<li><a href="Hi.html">🖐</a></li>
+				<li><a href="#">📺</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="menu">
+			<ul class="time">
+				<li class="five">5 p.m.
+					<ul class="5dropdown dropdown">
+						<li><a href="5pmIntro.html">Intro</a></li>
+						<li><a href="5pmVideo.html">영상</a></li>
+						<li><a href="5pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="ten">10 p.m.
+					<ul class="10dropdown dropdown">
+						<li><a href="10pmIntro.html">Intro</a></li>
+						<li><a href="10pmVideo.html">영상</a></li>
+						<li><a href="10pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="two">2 a.m.
+					<ul class="2dropdown dropdown">
+						<li><a href="2amIntro.html">Intro</a></li>
+						<li><a href="2amVideo.html">영상</a></li>
+						<li><a href="2amMusic.html">음악</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+            <div class="input">
+                <input type="text" id="name" name="name" placeholder="이름" required />
+                <select id="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="text" id="from" name="from" placeholder="우리 집" required />
+                <input type="text" id="to" name="to" value="영차 Planet" required />
+                <input type="date" id="date" name="bday" required />
+                <input type="time" id="time" name="time" required />
+            </div>
+            <img src="ticket.png" width="1170">
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="coordinates">
+			37.21107753925565°N <br>
+			127.04859791876196°E
+		</div>
+		<div class="document">
+			<a href="https://drive.google.com/file/d/1hWgz35uQlJKpZL_PNg0ew_cJnPopxXpn/preview" target="_blank">
+				<br>📒📙📘📗📕홈페이지 기획서📕📗📘📙📒
+			</a>
+		</div>
+	</div>
+</div>
+
+</html>
