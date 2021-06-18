@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html oncontextmenu='return false' ondragstart='return false'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>영차 Planet</title>
+	<link rel="stylesheet" type="text/css" href="2amVideo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.Top').fadeIn();
+                } else {
+                    $('.Top').fadeOut();
+                }
+            });
+
+            $('.Top').click(function() {
+                $('html, body').animate({scrollTop : 0}, 0);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<div class="container">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="BlueLogo.png" />
+			</a>
+		</div>
+		<div class="planet">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="ticket.html">🎫</a></li>
+				<li><a href="Hi.html">🖐</a></li>
+				<li><a href="#">📺</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="menu">
+			<ul class="time">
+				<li class="five">5 p.m.
+					<ul class="5dropdown dropdown">
+						<li><a href="5pmIntro.html">Intro</a></li>
+						<li><a href="5pmVideo.html">영상</a></li>
+						<li><a href="5pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="ten">10 p.m.
+					<ul class="10dropdown dropdown">
+						<li><a href="10pmIntro.html">Intro</a></li>
+						<li><a href="10pmVideo.html">영상</a></li>
+						<li><a href="10pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="two">2 a.m.
+					<ul class="2dropdown dropdown">
+						<li><a href="2amIntro.html">Intro</a></li>
+						<li><a href="2amVideo.html">영상</a></li>
+						<li><a href="2amMusic.html">음악</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<fieldset>
+				<legend>
+					2 a.m. <span>📺</span>
+				</legend>
+                <br>
+				<table class="table">
+					<tr>
+                        <td><span></span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+						<td></td>
+						<td>⚠누르면 이동⚠</td>
+                    </tr>
+                    <tr>
+                        <td><span>영화</span></td>
+                        <td><a href="#노트북">노트북</a></td>
+                        <td><a href="#가디언즈">가디언즈</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>드라마</span></td>
+                        <td><a href="#상견니">상견니</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>뮤직비디오</span></td>
+						<td><a href="#예뻤어">예뻤어</a></td>
+                        <td><a href="#노력">노력해볼게요</a></td>
+						<td><a href="#밤편지">밤편지</a></td>
+						<td><a href="#동화">동화</a></td>
+                        <td><a href="#반">D (half moon)</a></td>
+                    </tr>
+                    <tr>
+                        <td><span></span></td>
+						<td><a href="#인스타">instagram</a></td>
+                        <td><a href="#밤별">밤과 별의 노래</a></td>
+						<td><a href="#헤픈">헤픈 우연</a></td>
+                    </tr>
+					<tr>
+                        <td><span>Etc.</span></td>
+                        <td><a href="#여보셔">원,투,쓰리,포</a></td>
+						<td><a href="#해진">해진의 편지</a></td>
+                        <td><a href="#내죽">내가 죽었을 때</a></td>
+                        <td><a href="#원필">원필 직캠</a></td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr>
+                <table class="video">
+                    <tr>
+                        <td>
+                            <p id="노트북">노트북 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/pbOny3Ni-kc" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="가디언즈">가디언즈 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/gzbYTUXZkSI" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="상견니">상견니 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/fRPkLRarG24" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="예뻤어">예뻤어 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/BS7tz2rAOSA" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="노력">노력해볼게요 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/5-ysnvQpk6w" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="밤편지">밤편지 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/BzYnNdJhZQw" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="동화">동화 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/OM_QECPyIUg" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="반">D (half moon) <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/eelfrHtmk68" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="인스타">instagram <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/wKyMIrBClYw" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="밤별">밤과 별의 노래 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/RgVQ7YJRehM" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="헤픈">헤픈 우연 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/AJPLgrfBiBo" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="여보셔">원,투,쓰리,포 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/mTQZN9rP-U0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="해진">해진의 편지 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/FfKCslOucm0" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="내죽">내가 죽었을 때 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/vpemvJQLqZ4" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="원필">파도가 끝나는 곳까지 원필 직캠 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/P0fHYrOWGzc" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="내죽">좋아합니다 원필 직캠 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/088l6I54yd0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="원필">Congraturation 원필 직캠 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/GiQcgKzF2LQ" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="coordinates">
+			37.21107753925565°N <br>
+			127.04859791876196°E
+		</div>
+		<div class="document">
+			<a href="https://drive.google.com/file/d/1hWgz35uQlJKpZL_PNg0ew_cJnPopxXpn/preview" target="_blank">
+				<br>📒📙📘📗📕홈페이지 기획서📕📗📘📙📒
+			</a>
+		</div>
+        <a class="Top" href="#">🚀</a>
+	</div>
+</div>
+
+</html>

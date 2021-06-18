@@ -1,0 +1,282 @@
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+html, .container {
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    align: center;
+    scroll-behavior:smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.nav {
+	margin-top: 90px;
+	margin-right: 3px;
+}
+
+.nav ul {
+	font-size: 30px;
+	list-style: none;
+	text-align: center;
+}
+
+.nav ul li {
+	display: inline;
+	letter-spacing: 60px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-shadow: 5px 5px 3px lightgray;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.menu {
+	font-family: 'NanumSquare', sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	margin-left: 290px;
+	white-space: nowrap;
+}
+
+.menu ul {
+	list-style: none;
+	text-align: right;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.time li {
+    position: relative;
+    margin-bottom: 160px;
+}
+
+.time li:hover {
+    position: relative;
+}
+
+.time li.five:hover {
+    color: #FFAA00;
+}
+
+.time li.ten:hover {
+    color: #8800FF;
+}
+
+.time li.two:hover {
+    color: #005DFF;
+}
+
+.dropdown {
+    display: none;
+    top: 30px;
+    left:0;
+	font-family: 'NanumSquare', sans-serif;
+	font-weight: 700;
+	list-style: none;
+	font-size: 18px;
+}
+
+.dropdown li {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.dropdown li:hover {
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+.time > li:hover ul.dropdown {
+    display: block;
+}
+
+.main {
+    margin-top: 0px;
+    margin-left: 150px;
+}
+
+.main fieldset {
+    width: 1000px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.main legend {
+    color: #8800FF;
+    font-family: 'Righteous', cursive;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.main legend span {
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #8800FF;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    overflow:hidden;
+    word-break: nowrap;
+    text-overflow : ellipsis;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    font-size:15px;
+}
+
+.table a {
+    text-decoration: none;
+    color: black;
+}
+
+.video td {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+}
+
+.main span {
+    font-size:18px;
+    font-weight: 800;
+    color: #303030;
+    margin-right: 40px;
+}
+
+.main fieldset p {
+    line-height: 2;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+	font-family: "새굴림";
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	line-height:1.8;
+	color: #858585;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.coordinates {
+    margin-left: 65px;
+}
+
+.document {
+    text-align: center;
+    margin-right: 65px;
+}
+
+.document a {
+    text-decoration: none;
+    color: #858585;
+}
+
+.Top {
+    text-decoration: none;
+    font-size: 60px;
+    position: fixed;
+    right: 60px;
+    bottom: 100px;
+    display: none;
+}
+
+.Top p {
+    font-family: "새굴림";
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	color: #858585;
+	text-align: center;
+	margin: 0;
+}
+
+.like-btn {
+    position: absolute;
+    zoom: 2;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+}
+
+.fa-heart{
+      font-size: var(--like-font-size);
+      -webkit-text-stroke: 2px lightgray;
+      color: whitesmoke;
+      transition: all ease-in-out;
+}
+
+.like-btn:checked + .fa-heart{
+      color: red;
+      -webkit-text-stroke: 1px red;
+      animation: .5s linear burst;
+}
+
+@keyframes burst{
+    0%,10%{
+        transform: scale(1);
+        opacity: .5;
+        color:lavender;
+    }
+    45%{
+        transform: scale(.2) rotate(30deg);
+        opacity: .75;
+    }
+    50%{
+        transform: scale(2) rotate(-37.5deg);
+        opacity: 1;
+        color: red;
+        text-shadow: 2px 2px 6px rgba(235, 9, 9, 0.5);
+    }
+    90%,95%{
+        transform: scale(1) rotate(10deg);
+        text-shadow: none;
+    }
+    100% {
+        transform: rotate(-2.5deg);
+    }
+
+}

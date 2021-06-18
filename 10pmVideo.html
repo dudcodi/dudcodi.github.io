@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html oncontextmenu='return false' ondragstart='return false'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>영차 Planet</title>
+	<link rel="stylesheet" type="text/css" href="10pmVideo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.Top').fadeIn();
+                } else {
+                    $('.Top').fadeOut();
+                }
+            });
+
+            $('.Top').click(function() {
+                $('html, body').animate({scrollTop : 0}, 0);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<div class="container">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="PurpleLogo.png" />
+			</a>
+		</div>
+		<div class="planet">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="ticket.html">🎫</a></li>
+				<li><a href="Hi.html">🖐</a></li>
+				<li><a href="#">📺</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="menu">
+			<ul class="time">
+				<li class="five">5 p.m.
+					<ul class="5dropdown dropdown">
+						<li><a href="5pmIntro.html">Intro</a></li>
+						<li><a href="5pmVideo.html">영상</a></li>
+						<li><a href="5pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="ten">10 p.m.
+					<ul class="10dropdown dropdown">
+						<li><a href="10pmIntro.html">Intro</a></li>
+						<li><a href="10pmVideo.html">영상</a></li>
+						<li><a href="10pmMusic.html">음악</a></li>
+					</ul>
+				</li>
+				<li class="two">2 a.m.
+					<ul class="2dropdown dropdown">
+						<li><a href="2amIntro.html">Intro</a></li>
+						<li><a href="2amVideo.html">영상</a></li>
+						<li><a href="2amMusic.html">음악</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<fieldset>
+				<legend>
+					10 p.m. <span>📺</span>
+				</legend>
+                <br>
+				<table class="table">
+					<tr>
+                        <td><span></span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+						<td></td>
+						<td>⚠누르면 이동⚠</td>
+                    </tr>
+                    <tr>
+                        <td><span>영화</span></td>
+                        <td><a href="#인터">인터스텔라</a></td>
+                        <td><a href="#라라">라라랜드</a></td>
+                        <td><a href="#알라딘">알라딘</a></td>
+                        <td><a href="#주토피아">주토피아</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>드라마</span></td>
+                        <td><a href="#멸망">멸망</a></td>
+                        <td><a href="#응팔">응답하라1988</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>뮤직비디오</span></td>
+						<td><a href="#넥레">Next Level</a></td>
+						<td><a href="#구공럽">90's Love</a></td>
+						<td><a href="#영웅">영웅</a></td>
+						<td><a href="#세이브">Save</a></td>
+						<td><a href="#맛">맛</a></td>
+                    </tr>
+                    <tr>
+                        <td><span></span></td>
+						<td><a href="#쟈핑">Jopping</a></td>
+						<td><a href="#코인">Coin</a></td>
+						<td><a href="#팝스타">POP/STARS</a></td>
+                    </tr>
+					<tr>
+                        <td><span>Etc.</span></td>
+                        <td><a href="#여보셔">여신님이 보고계셔</a></td>
+                        <td><a href="#명로">명동로망스</a></td>
+                        <td><a href="#일레귤러">Irregular Office</a></td>
+						<td><a href="#레귤러">Regular Dream</a></td>
+                        <td><a href="#민박">효리네 민박</a></td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr>
+                <table class="video">
+                    <tr>
+                        <td>
+                            <p id="인터">인터스텔라 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/ySv1nh11m_Q" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="라라">라라랜드 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/cmkZeTX5fq0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="알라딘">알라딘 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/BMW5TB0weSs" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="주토피아">주토피아 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/ZHDD79yTfW4" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="멸망">멸망 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src='https://tv.naver.com/embed/20773377?autoPlay=false' allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="응팔">응답하라 1988 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src='https://tv.naver.com/embed/688181?autoPlay=false' allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="넥레">Next Level <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/4TWR90KJl84" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="구공럽">90's Love <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/A5H8zBb3iao" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="영웅">영웅 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/2OvyA2__Eas" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="세이브">Save <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/O8Xq4xfH2ro" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="맛">맛 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/PkKnp4SdE-w" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="쟈핑">Jopping <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/pAnK1y7qjuE" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <p id="코인">Coin <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/86BST8NIpNM" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="팝스타">POP/STARS <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/UOxkGD8qRB4" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="여보셔">여신님이 보고계셔 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/D8TICYCp5zE" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="명로">명동로망스 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/Fax6bvoolu4" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="일레귤러">Irregular Office <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/Pne7e_FGGsM" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <p id="레귤러">Regular Dream <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/dnNk7m7qpQg" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="민박">효리네 민박 <input type="checkbox" class="like-btn"><i class="fa fa-heart"></i></p>
+                            <iframe width="400" height="225" src="https://www.youtube.com/embed/RMkItHIdqxc" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="coordinates">
+			37.21107753925565°N <br>
+			127.04859791876196°E
+		</div>
+		<div class="document">
+			<a href="https://drive.google.com/file/d/1hWgz35uQlJKpZL_PNg0ew_cJnPopxXpn/preview" target="_blank">
+				<br>📒📙📘📗📕홈페이지 기획서📕📗📘📙📒
+			</a>
+		</div>
+        <a class="Top" href="#">🚀</a>
+	</div>
+</div>
+
+</html>
