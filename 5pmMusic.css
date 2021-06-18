@@ -170,6 +170,10 @@ html, .container {
     padding-top: 30px;
 }
 
+.table td a:hover {
+    color: #FFAA00;
+}
+
 .main span {
     font-size:18px;
     font-weight: 800;

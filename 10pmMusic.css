@@ -164,6 +164,10 @@ html, .container {
     color: black;
 }
 
+.table td a:hover {
+    color: #8800FF;
+}
+
 .video td {
     padding-left: 45px;
     padding-right: 45px;
